@@ -1,0 +1,100 @@
+@import url(stiluslap.css);
+body{
+    font-size: 3em;
+    background-color: white;
+    color: black;
+}
+
+footer {display:none}
+
+#normalbetu{
+    display: block;
+}
+
+#nagybetu{
+    display: none;
+}
+
+.balszoveg{
+    float:none;
+    text-align: left;
+    width: 80%;
+    padding-left: 5%;
+}
+
+
+.jobbszoveg{
+    text-align: left;
+    float:none;
+    width: 80%;
+    padding-left: 5%;
+}
+
+.belsobal{
+    float: none;
+    text-align: left;
+    width: 80%;
+    margin-left: 5%;  
+}
+.belsojobb{
+    float: none;
+    text-align: left;
+    width: 80%;
+    margin-left: 5%;
+}
+
+.le{
+    margin-top: 5%;
+    float: none;
+}
+
+.keret{
+    width: 80%;
+    padding-left: 5%;
+    border: 1px solid black;
+    padding-bottom: 5%;
+}
+
+input[type="radio"],input[type="checkbox"] {
+    -ms-transform: scale(3); /* IE 9 */
+    -webkit-transform: scale(3); /* Chrome, Safari, Opera */
+    transform: scale(3);
+}
+
+input{
+    font-size: 2em;
+}
+
+textarea{
+    font-size: 1.5em;
+}
+
+.icons{
+    font-size: 50%; /*igy nem csusznak el az ikonok, amik egyebkent is lathato nagysaguak*/
+}
+
+img{
+    -ms-transform: scale(1.3); /* IE 9 */
+    -webkit-transform: scale(1.3); /* Chrome, Safari, Opera */
+    transform: scale(1.3);
+}
+
+.kepjobbra{
+    padding-top: 10%;
+    float: none;
+}
+
+.kepsor{
+    padding: 5%;
+    float: none;
+}
+
+.szoveg{
+    float: left;
+    padding: 5%;
+    margin: 0;
+}
+
+video{
+    padding-top: 5%;
+}

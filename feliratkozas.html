@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stiluslap.css"/>
+        <link rel="alternate stylesheet" type="text/css" href="nagybetus.css" title="nagybetus">
+        <script type="text/javascript" src="styleswitcher.js"></script>
+        <title>ÁMÓ - Űrlap</title>
+    </head>
+    <body>
+        <nav class="kipozicional">
+            <a href="#tartalom">Ugrás a tartalomra</a>
+        </nav>
+        <div class="nyomtat">
+            <div class="icons">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <a href="https://twitter.com/AcsMateOliver" title="A Twitter oldalam megnyitásához kattintson az ikonra" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/acs_mate_oliver/" title="Az Instagram oldalam megnyitásához kattintson az ikonra" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.facebook.com/acs.mate.oliver/" title="A Facebook oldalam megnyitásához kattintson az ikonra" target="_blank" class="fa fa-facebook"></a>
+            </div>
+            <br>
+            <h1>Ács Máté Olivér hivatalos oldala</h1>
+            <hr>
+            <header>
+                <a href="index.html">Kezdőlap</a>
+                <a href="munkaim.html">Munkáim</a>
+                <a href="hobbi.html">Hobbi</a>
+                <a href="feliratkozas.html" class="active">Feliratkozás</a>
+                <div class="jobbra">
+                    <nav id="gyengenlato"><a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;"><span class="ikon"></span>Nagybetűs változat</a>
+                    <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span class="ikon"></span>Normál változat</a>
+                    </nav>
+                </div>
+            </header>
+            <hr>
+        </div>
+        <main id="tartalom">
+            <form action="mailto:acsmateoliver@gmail.com" method="post">
+                <div class="balszoveg">
+                    <div class="szoveg">
+                        <h2>Feliratkorás előnyei:</h2>
+                        <p>A feliratkozással egy különleges és egyedi hírlevélre lehet jelentkezni, ahol (előre meg-nem-határozott időközönként) érkeznek tájékoztatók az oldal aktuális állapotával kapcsolatban. Nyomon követhető ez által, ha bármilyen fontos információ rólam vagy a munkáimmal kapcsolatban megváltozik. Összességében jó dolog, tessék feliratkozni, na!</p>
+                    </div>
+                    <div class="belsobal"> 
+                        <label for="nev"><b>Neve: </b></label><br>
+                        <input type="text" id="nev" name="nev" maxlength="20" placeholder="Gipsz Jakab" required><br>
+
+                        <div class="le">
+                            <label for="bday"><b>Születési dátuma: </b></label><br>
+                            <input type="date" id="bday" name="BirthDay" value="2000-01-01" min="1900-01-01" max="2020-12-31">
+                        </div>
+
+                        <div class="le">
+                            <label for="vel"><b>Véleménye az oldalról: </b></label><br>
+                            <textarea id="vel" name="velemeny" rows="6" cols="40"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="belsojobb">
+                        <p><b>Neme:</b></p>
+                        <div class="belsobal">
+                            <input type="radio" name="Neme" value="Férfi" id="m">
+                            <label for="m">Férfi</label>
+                        </div>
+                        <div class="belsojobb">
+                            <input type="radio" name="Neme" value="Nő" id="f" checked>
+                            <label for="f">Nő</label>
+                        </div>
+                        <div class="le">
+                            <br><br><label for="nev"><b>E-mail címe: </b></label><br>
+                            <input type="email" id="email" name="email" maxlength="320" required placeholder="gipszjakab@mailfiok.hu"> <!--Utánanéztem, 320 karakter lehet a leghosszabb e-mail cím-->
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="jobbszoveg">
+                    <div class="szoveg">
+                        <h2>Feliratkozás módja:</h2>
+                        <p>A feliratkozáshoz alapvető információkat kell megadnia magáról, amelyek a hírlevelem megfelelő működéséhez szükségesek. Töltse ki az alábbi űrlapot az adataival, majd nyomja meg az Elküldés gombot és máris feliratkozott az utánozhatatlan hírlevelemre.</p>
+                    
+                        <div class="keret">
+                            <h2>Mikről szeretne értesítéseket kapni?</h2>
+                            <input type="checkbox" id="hirlk" name="hirlevel" value="kezdo">
+                            <label for="hirlk">Kezdőlap rovat változásairól</label><br>
+                            <input type="checkbox" id="hirlm" name="hirlevel" value="munka" checked>
+                            <label for="hirlm">Munkáim rovat változásairól</label><br>
+                            <input type="checkbox" id="hirlh" name="hirlevel" value="hobbi">
+                            <label for="hirlh">Hobbi rovat változásairól</label><br>
+                            <input type="checkbox" id="hirlr" name="hirlevel" value="reklam">
+                            <label for="hirlr">Az oldal működését segítő reklámanyagokról</label>
+                        </div><br>
+
+                        <div class="keret">
+                            <h2>Ajánlaná-e az oldalt ismerőseinek?</h2>
+                            <input type="radio" name="ajanl" value="Igen" id="ajanl" checked>
+                            <label for="ajanl">Igen</label>
+                            <input type="radio" name="ajanl" value="Nem" id="najanl">
+                            <label for="najanl">Nem</label>
+                        </div><br>
+
+                        <input type="reset" value="Alaphelyzetbe állítás">
+                        <input type="submit" value="Elküldés">
+                    </div>
+                </div>
+
+            </form>
+        </main>
+    </body>
+</html>
